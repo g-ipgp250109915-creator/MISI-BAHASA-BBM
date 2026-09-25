@@ -1,0 +1,28 @@
+{
+  "name": "Misi Bahasa — BBM Digital Interaktif",
+  "short_name": "Misi Bahasa",
+  "description": "BBM Digital Interaktif Bahasa Melayu Tahun 4 bertema Kemasyarakatan.",
+  "lang": "ms-MY",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#fff8e7",
+  "theme_color": "#6c5ce7",
+  "categories": ["education", "kids", "learning"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#6c5ce7" />
+  <title>Misi Bahasa — BBM Digital Interaktif</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Misi Bahasa" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+</head>
+<body>
+  <div class="sky sky-1"></div><div class="sky sky-2"></div>
+  <div id="confetti" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <button class="brand" data-page="home" aria-label="Kembali ke halaman utama">
+      <span class="brand-logo">🔎<b>BM</b></span>
+      <span><strong>MISI BAHASA</strong><small>Detektif Kata Nama • Tahun 4</small></span>
+    </button>
+    <div class="top-actions">
+      <button id="soundBtn" class="icon-btn" title="Bunyi">🔊 Bunyi</button>
+      <button id="musicBtn" class="icon-btn" title="Muzik latar">🎵 Muzik</button>
+      <button class="teacher-btn" data-page="teacher">👩‍🏫 Mod Guru</button>
+    </div>
+  </header>
+
+  <section class="mission-track" id="missionTrack">
+    <div class="track-inner">
+      <button class="track-step" data-page="learn" data-step="1"><span>1</span><b>Kenali</b><i>🔓</i></button>
+      <span class="track-line"></span>
+      <button class="track-step locked" data-page="mission1" data-step="2"><span>2</span><b>Siasat</b><i>🔒</i></button>
+      <span class="track-line"></span>
+      <button class="track-step locked" data-page="mission2" data-step="3"><span>3</span><b>Klasifikasi</b><i>🔒</i></button>
+      <span class="track-line"></span>
+      <button class="track-step locked" data-page="mission3" data-step="4"><span>4</span><b>Susun Ayat</b><i>🔒</i></button>
+      <span class="track-line"></span>
+      <button class="track-step locked" data-page="final" data-step="5"><span>5</span><b>Cabaran</b><i>🔒</i></button>
+    </div>
+  </section>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="page active">
+      <div class="hero detective-hero">
+        <div class="hero-copy">
+          <div class="eyebrow">📚 TAHUN 4 • TATABAHASA • TEMA 1 KEMASYARAKATAN</div>
+          <h1>Jom jadi <span>Detektif Bahasa!</span> 🕵️‍♀️</h1>
+          <p class="lead">Bantu komuniti Jiran Tetangga menyelesaikan misteri kata nama. Cari petunjuk, klasifikasikan perkataan dan bina ayat dengan tepat!</p>
+          <div class="curriculum-chip"><b>SK 5.1</b> Memahami fungsi dan menggunakan golongan kata mengikut konteks.</div>
+          <div class="curriculum-chip"><b>SP 5.1.1</b> Memahami dan menggunakan kata nama mengikut konteks tidak formal: kata nama am, kata nama khas, kata ganti nama dan penjodoh bilangan.</div>
+          <button class="primary big" id="startBtn">🚀 Mulakan Misi!</button>
+        </div>
+        <div class="hero-character">
+          <div class="spark s1">✦</div><div class="spark s2">★</div>
+          <div class="detective">🕵️‍♀️</div>
+          <div class="magnify">🔎</div>
+          <div class="case-file">FAIL<br><b>BM-04</b></div>
+        </div>
+      </div>
+
+      <div class="mission-map-card">
+        <div class="section-head"><div><span class="eyebrow">PETA MISI</span><h2>5 cabaran untuk jadi Detektif Bahasa</h2></div><span class="score-pill">⭐ 30 mata</span></div>
+        <div class="map-grid">
+          <button class="map-card" data-page="learn"><span class="map-no">01</span><span class="map-icon">📖</span><strong>Kenali Kata Nama</strong><small>Belajar 4 jenis kata nama</small><em>Mulakan</em></button>
+          <button class="map-card locked" data-page="mission1"><span class="map-no">02</span><span class="map-icon">🕵️</span><strong>Siasat Petunjuk</strong><small>Kenal pasti kata nama</small><em>🔒 Terkunci</em></button>
+          <button class="map-card locked" data-page="mission2"><span class="map-no">03</span><span class="map-icon">🗂️</span><strong>Klasifikasi Fail</strong><small>Kelaskan 8 perkataan</small><em>🔒 Terkunci</em></button>
+          <button class="map-card locked" data-page="mission3"><span class="map-no">04</span><span class="map-icon">🧩</span><strong>Susun Ayat</strong><small>Bina ayat yang betul</small><em>🔒 Terkunci</em></button>
+          <button class="map-card locked" data-page="final"><span class="map-no">05</span><span class="map-icon">🏆</span><strong>Cabaran Akhir</strong><small>10 soalan pantas</small><em>🔒 Terkunci</em></button>
+        </div>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card purple"><span>🎯</span><h3>Objektif</h3><p>Murid mengenal pasti, membezakan dan menggunakan kata nama mengikut konteks tidak formal.</p></article>
+        <article class="info-card yellow"><span>🎮</span><h3>Interaktif</h3><p>Aktiviti klik, klasifikasi, susun perkataan secara rawak, maklum balas segera dan sistem misi.</p></article>
+        <article class="info-card green"><span>🔊</span><h3>Mesra Murid</h3><p>Animasi, bunyi betul/salah dan bahasa yang ringkas membantu pengalaman pembelajaran.</p></article>
+      </div>
+    </section>
+
+    <!-- LEARN -->
+    <section id="learn" class="page">
+      <div class="page-title"><span class="eyebrow">MISI 1 • KENALI</span><h1>📖 Buka Fail Kata Nama</h1><p>Kenali empat jenis kata nama sebelum memulakan siasatan.</p></div>
+      <div class="tabs" id="lessonTabs"></div>
+      <div id="lessonContent"></div>
+      <div class="action-row"><button class="ghost" data-page="home">← Peta Misi</button><button class="primary" id="toMission1">🔎 Saya Sudah Faham — Misi 2 →</button></div>
+    </section>
+
+    <!-- MISSION 1 -->
+    <section id="mission1" class="page">
+      <div class="page-title"><span class="eyebrow">MISI 2 • SIASAT</span><h1>🕵️ Cari Petunjuk Kata Nama</h1><p>Pilih jawapan yang paling tepat untuk setiap kes.</p></div>
+      <div class="score-banner"><span>📝 Kes disiasat: <b id="m1Count">0/8</b></span><span>⭐ Skor: <b id="m1Score">0/8</b></span></div>
+      <div id="mission1Content" class="question-list"></div>
+      <div class="action-row"><button class="ghost" data-page="home">← Peta Misi</button><button class="primary" id="checkMission1" disabled>Semak Jawapan ✓</button></div>
+    </section>
+
+    <!-- MISSION 2 -->
+    <section id="mission2" class="page">
+      <div class="page-title"><span class="eyebrow">MISI 3 • KLASIFIKASI</span><h1>🗂️ Failkan Perkataan</h1><p>Pilih satu perkataan, kemudian klik fail kategori yang betul.</p></div>
+      <div class="score-banner"><span>📌 Petunjuk: <b id="m2Count">0/8</b></span><span>⭐ Skor: <b id="m2Score">0/8</b></span></div>
+      <div class="classify-layout"><div id="wordBank" class="word-bank"></div><div id="categoryBoard" class="category-board"></div></div>
+      <div class="action-row"><button class="ghost" data-page="home">← Peta Misi</button><button class="primary" id="toMission3" disabled>Misi 3 Selesai — Susun Ayat →</button></div>
+    </section>
+
+    <!-- MISSION 3 -->
+    <section id="mission3" class="page">
+      <div class="page-title"><span class="eyebrow">MISI 4 • SUSUN AYAT</span><h1>🧩 Bina Ayat Misteri</h1><p>Klik perkataan dalam susunan yang betul. Perkataan akan diacak setiap kali misi bermula!</p></div>
+      <div id="sentenceContent" class="sentence-list"></div>
+      <div class="action-row"><button class="ghost" data-page="home">← Peta Misi</button><button class="primary" id="toFinal" disabled>🏆 Semua Ayat Betul — Cabaran Akhir →</button></div>
+    </section>
+
+    <!-- FINAL -->
+    <section id="final" class="page">
+      <div class="page-title"><span class="eyebrow">CABARAN AKHIR • 10 SOALAN</span><h1>🏆 Kes Terakhir Detektif</h1><p>Gunakan semua petunjuk yang telah dipelajari.</p></div>
+      <div class="score-banner"><span>⚡ Soalan: <b id="finalCount">0/10</b></span><span>⭐ Skor: <b id="finalScore">0/10</b></span></div>
+      <div id="finalContent" class="question-list"></div>
+      <div class="action-row"><button class="ghost" data-page="home">← Peta Misi</button><button class="primary" id="finishFinal" disabled>Semak & Tamatkan Misi 🏁</button></div>
+    </section>
+
+    <!-- RESULT -->
+    <section id="result" class="page">
+      <div class="result-card">
+        <div id="resultEmoji" class="result-emoji">🏆</div>
+        <span class="eyebrow">KES SELESAI!</span><h1 id="resultTitle">Tahniah, Detektif!</h1>
+        <p id="resultText"></p>
+        <div class="total-score"><b id="totalScore">0</b><span>/ 30 mata</span></div>
+        <div class="mastery"><div class="mastery-head"><span>Tahap penguasaan</span><b id="masteryText">0%</b></div><div class="bar"><i id="masteryBar"></i></div></div>
+        <div class="result-actions"><button class="primary" id="againBtn">🔄 Main Semula</button><button class="ghost" data-page="teacher">👩‍🏫 Tentang BBM / Mod Guru</button></div>
+      </div>
+    </section>
+
+    <!-- TEACHER / ABOUT -->
+    <section id="teacher" class="page">
+      <div class="page-title"><span class="eyebrow">TENTANG BBM</span><h1>👩‍🏫 Nota Guru & Dokumentasi</h1><p>Maklumat ringkas untuk menerangkan reka bentuk dan penggunaan BBM digital.</p></div>
+      <div class="teacher-grid">
+        <article><h3>📚 Kurikulum</h3><p><b>Mata pelajaran:</b> Bahasa Melayu Tahun 4 SK</p><p><b>Tema:</b> Tema 1 — Kemasyarakatan</p><p><b>Unit:</b> Unit 1 — Jiran Tetangga</p><p><b>Tajuk:</b> Yang Tua Dihormati, Yang Muda Disayangi</p><p><b>SK 5.1:</b> Memahami fungsi dan menggunakan golongan kata mengikut konteks.</p><p><b>SP 5.1.1:</b> Memahami dan menggunakan kata nama mengikut konteks tidak formal meliputi kata nama am, kata nama khas, kata ganti nama dan penjodoh bilangan.</p></article>
+        <article><h3>🎯 Objektif</h3><ol><li>Mengenal pasti empat jenis kata nama.</li><li>Membezakan penggunaan kata nama berdasarkan konteks.</li><li>Mengklasifikasikan perkataan mengikut jenis kata nama.</li><li>Membina ayat mudah dengan susunan yang betul.</li><li>Menilai kefahaman melalui cabaran akhir.</li></ol></article>
+        <article><h3>🎮 Reka Bentuk Aktiviti</h3><p><b>Misi 1:</b> Penerokaan nota interaktif.</p><p><b>Misi 2:</b> Kuiz pilihan jawapan.</p><p><b>Misi 3:</b> Klasifikasi empat kategori.</p><p><b>Misi 4:</b> Susun ayat dengan perkataan rawak.</p><p><b>Cabaran akhir:</b> 10 item pentaksiran ringkas.</p></article>
+        <article><h3>📝 Pentaksiran</h3><p>Maklum balas diberikan serta-merta. Skor keseluruhan ialah 30 mata. Guru boleh menggunakan skor sebagai evidens pentaksiran formatif dan mengenal pasti murid yang memerlukan pengukuhan.</p></article>
+        <article><h3>🔐 Keselamatan</h3><p>BBM ini tidak meminta nama, e-mel, kata laluan atau maklumat peribadi murid. Skor hanya digunakan dalam sesi pelayaran semasa dan tidak dihantar ke pelayan.</p></article>
+        <article><h3>📖 Sumber Tema</h3><p>Tema, unit dan tajuk konteks diselaraskan dengan Bahasa Melayu Tahun 4 SK KSSR Semakan 2017: Tema 1 Kemasyarakatan, Unit 1 Jiran Tetangga, tajuk “Yang Tua Dihormati, Yang Muda Disayangi”.</p><p><b>Audio:</b> muzik latar ceria dijana secara dalaman. Voice-over telah dikeluarkan supaya murid tidak keliru dengan sebutan voice lalai komputer.</p></article>
+      </div>
+      <div class="credits"><div class="credit-logo">🔎<b>BM</b></div><div><span>KREDIT KUMPULAN</span><h2>NUR AINI TALIB • NURATIKA KISUN@AHMAD • NUR INTAN AZWANDA JAMIN</h2><p>KURSUS BMMB6033 KURIKULUM BAHASA MELAYU SEKOLAH RENDAH</p></div></div>
+      <div class="action-row"><button class="primary" data-page="home">🏠 Kembali ke Peta Misi</button></div>
+    </section>
+  </main>
+
+  <footer><span>🔎 Misi Bahasa</span><span>BBM Digital Interaktif • Bahasa Melayu Tahun 4</span><span>© Kumpulan BMMB6033</span></footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+<script>
+    if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
+    }
+  </script>
+</body>
+</html>
